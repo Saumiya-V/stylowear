@@ -1,0 +1,498 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "email": "admin@gmail.com",
+      "password": "Admin123",
+      "role": "admin"
+    },
+    {
+      "id": "2",
+      "email": "user@gmail.com",
+      "password": "India123",
+      "role": "user"
+    }
+  ],
+  "clothing": [
+    {
+      "id": "1",
+      "name": "Cotton T-Shirt",
+      "category": "T-Shirts",
+      "gender": "Men",
+      "price": 25.99,
+      "image": "https://imgs.search.brave.com/K_nUanw-RbZdFMbeAu7ku8AV8j8bOLKvPs94zFsfoY4/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNTkv/NTUzLzQ2OS9zbWFs/bC9jbGFzc2ljLW1l/bi1zLXdoaXRlLWxv/bmctc2xlZXZlLWRy/ZXNzLXNoaXJ0LWZv/cm1hbC13ZWFyLWJ1/c2luZXNzLWFwcGFy/ZWwtY3Jpc3AtY290/dG9uLWZhYnJpYy1w/bmcucG5n"
+    },
+    {
+      "id": "2",
+      "name": "Slim Fit Jeans",
+      "category": "Jeans",
+      "gender": "Men",
+      "price": 49.99,
+      "image": "https://imgs.search.brave.com/6mCMUbcwLOMkAqD84dgEsKQLtuIWjwygmcLW8aMKj8g/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMjEv/MzMyLzkyNy9zbWFs/bC9ibHVlLWplYW5z/LWlzb2xhdGVkLW9u/LWEtdHJhbnNwYXJl/bnQtYmFja2dyb3Vu/ZC1wbmcucG5n"
+    },
+    {
+      "id": "3",
+      "name": "Hooded Sweatshirt",
+      "category": "Hoodies",
+      "gender": "Men",
+      "price": 39.99,
+      "image": "https://imgs.search.brave.com/BJip3ZRL8-dC8eQUGO94cydUIm7XotI7YkrMGe1Yk3I/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNTcv/MTg2Lzg1Ni9zbWFs/bC9hLWdyYXktaG9v/ZGllLXdpdGgtZnJv/bnQtcG9ja2V0LWFu/ZC1kcmF3c3RyaW5n/LWhvb2QtcGVyZmVj/dC1mb3ItY2FzdWFs/LXdlYXItcG5nLnBu/Zw"
+    },
+    {
+      "id": "4",
+      "name": "Men's Formal Shirt",
+      "category": "Shirts",
+      "gender": "Men",
+      "price": 34.99,
+      "image": "https://imgs.search.brave.com/j7ZXpR_YtmCM6aNBjOM6jaFV8n9wPpYsqT5GxwVPYtY/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNTcv/OTgxLzY3Ni9zbWFs/bC93aGl0ZS1zaG9y/dC1zbGVldmUtc2hp/cnQtd2l0aC1wb2Nr/ZXQtc3VpdGFibGUt/Zm9yLWNhc3VhbC1v/ci1mb3JtYWwtd2Vh/ci1wbmcucG5n"
+    },
+    {
+      "id": "5",
+      "name": "Casual Shorts",
+      "category": "Shorts",
+      "gender": "Men",
+      "price": 24.99,
+      "image": "https://imgs.search.brave.com/y4SCk4rIy_dNQiR-26RFwdAZp4Y30FpdHpKbO1eZQcY/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNTYv/ODE4LzIzNS9zbWFs/bC93aGl0ZS1hdGhs/ZXRpYy1zaG9ydHMt/aGFuZ2luZy1vbi1o/b29rLXBlcmZlY3Qt/Zm9yLWNhc3VhbC13/ZWFyLW9yLXdvcmtv/dXRzLXBuZy5wbmc"
+    },
+    {
+      "id": "6",
+      "name": "Blazer Jacket",
+      "category": "Blazers",
+      "gender": "Men",
+      "price": 79.99,
+      "image": "https://imgs.search.brave.com/OsdCuENu15u-8n8UwihS9Dm_HU8hNgK8gcPFVjwpNK8/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNTEv/OTAwLzAxNS9zbWFs/bC9taW5pbWFsaXN0/aWMtaGVhZGxlc3Mt/bWFuLWluLWJsYWNr/LWJsYXplci13aXRo/LXRyYW5zcGFyZW50/LWJhY2tncm91bmQt/cmVhbGlzdGljLXN0/eWxlLWZyZWUtcG5n/LnBuZw"
+    },
+    {
+      "id": "7",
+      "name": "Polo Tee",
+      "category": "Polo Shirts",
+      "gender": "Men",
+      "price": 22.99,
+      "image": "https://imgs.search.brave.com/sIqHXHPsYdwmbm2PtFwqHuTNrY25TJZWkP-UMsqtuf4/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNjUv/Mjc2LzMyMy9zbWFs/bC93aGl0ZS1wb2xv/LXNoaXJ0LWRlc2ln/bi1mb3ItY2FzdWFs/LXdlYXItb3ItcHJv/bW90aW9uYWwtcHVy/cG9zZXMtcG5nLnBu/Zw"
+    },
+    {
+      "id": "8",
+      "name": "Men's Trousers",
+      "category": "Trousers",
+      "gender": "Men",
+      "price": 29.99,
+      "image": "https://imgs.search.brave.com/TQRc1kuBmoB9zJhv3x2SuDzgJAR8geYcwM9ErgE1AAk/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNTYv/ODE4LzAyNi9zbWFs/bC93aGl0ZS1qZWFu/cy13aXRoLWJyb3du/LXNob2VzLWNhc3Vh/bC1vdXRmaXQtZm9y/LW1lbi1wbmcucG5n"
+    },
+    {
+      "id": "9",
+      "name": "Active Joggers",
+      "category": "Activewear",
+      "gender": "Men",
+      "price": 44.99,
+      "image": "https://imgs.search.brave.com/FM8w9FgNDg142bXboF8P1_U8upY7X4qrgwmsNiSyeag/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNTYv/ODE4LzAyOS9zbWFs/bC93aGl0ZS1hdGhs/ZXRpYy1zaG9lcy1h/bmQtbG9vc2UtcGFu/dHMtaW4tbW90aW9u/LXNob3djYXNpbmct/ZHluYW1pYy1zdHls/ZS1wbmcucG5n"
+    },
+    {
+      "id": "10",
+      "name": "Winter Coat",
+      "category": "Coats",
+      "gender": "Men",
+      "price": 99.99,
+      "image": "https://imgs.search.brave.com/7byrqKNv19LVkt9R6oANx9qYXRagwWG9RVbWDfuDJv4/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNTcv/MTg2LzI4MS9zbWFs/bC9saWdodC1ncmF5/LXB1ZmZlci1qYWNr/ZXQtd2l0aC1ob29k/LXBlcmZlY3QtZm9y/LXdpbnRlci13ZWFy/LWFuZC1vdXRkb29y/LWFjdGl2aXRpZXMt/cG5nLnBuZw"
+    },
+    {
+      "id": "11",
+      "name": "Men's Suit",
+      "category": "Suits",
+      "gender": "Men",
+      "price": 149.99,
+      "image": "https://imgs.search.brave.com/tr_HIhJ3j4vHL382l6973K-K5A_2M_5IAamhH8kVJ5I/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNTQv/NTcwLzQ2Ni9zbWFs/bC9uYXZ5LWJsdWUt/bWVucy1zdWl0LW1v/Y2t1cC1wbmcucG5n"
+    },
+    {
+      "id": "12",
+      "name": "Cardigan Sweater",
+      "category": "Cardigans",
+      "gender": "Men",
+      "price": 35.99,
+      "image": "https://imgs.search.brave.com/Iw_6keDbqVPE55jSo3mCBlAHQo0AGssQiaawOS5KSb8/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNTkv/NDg4LzczNC9zbWFs/bC9waW5rLXJpYmJl/ZC1zd2VhdGVyLWNv/enkta25pdHdlYXIt/Zm9yLWZhc2hpb24t/YW5kLXN0eWxlLWRl/c2lnbi1wbmcucG5n"
+    },
+    {
+      "id": "13",
+      "name": "Men's Overalls",
+      "category": "Overalls",
+      "gender": "Men",
+      "price": 55,
+      "image": "https://imgs.search.brave.com/HGSPX4QquYRsfHd6BiHMT2Tw10GIx0CJwcXD5cWRil8/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNTUv/MTM1LzA5NS9zbWFs/bC9kZW5pbS1vdmVy/YWxscy1mb3ItY2hp/bGRyZW4taXNvbGF0/ZWQtb24tdHJhbnNw/YXJlbnQtYmFja2dy/b3VuZC1zaG93Y2Fz/aW5nLXN0eWxpc2gt/YW5kLWR1cmFibGUt/Y2xvdGhpbmctZm9y/LWtpZHMtaW4tYS1j/bGFzc2ljLWJsdWUt/ZmFicmljLWRlc2ln/bi1mcmVlLXBuZy5w/bmc"
+    },
+    {
+      "id": "14",
+      "name": "Men's Tank Top",
+      "category": "Tank Tops",
+      "gender": "Men",
+      "price": 14.99,
+      "image": "https://imgs.search.brave.com/vL2LlVMEzdNGWB_nm_Z163fJJZY6pGsf5cJtvHoiuHk/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNTcv/OTgxLzUyNS9zbWFs/bC93aGl0ZS10YW5r/LXRvcC1mcm9udC1h/bmQtYmFjay12aWV3/LXNob3djYXNpbmct/c29mdC1mYWJyaWMt/YW5kLWNhc3VhbC1z/dHlsZS1wZXJmZWN0/LWZvci1zdW1tZXIt/d2Vhci1vci1sYXll/cmluZy1wbmcucG5n"
+    },
+    {
+      "id": "15",
+      "name": "Loungewear Set",
+      "category": "Loungewear",
+      "gender": "Men",
+      "price": 32,
+      "image": "https://imgs.search.brave.com/TosnjIv5CvdEsY4WBHjP1wzpss_3oxJwvpxQvBKA4cQ/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMjMv/MzcwLzQ1OC9zbWFs/bC9zYW5kLWR1bmUt/bWVuLXMtY2xhc3Np/Yy10LXNoaXJ0LWZy/b250LWFuZC1iYWNr/LWZyZWUtcG5nLnBu/Zw"
+    },
+    {
+      "id": "16",
+      "name": "Padded Jacket",
+      "category": "Jackets",
+      "gender": "Men",
+      "price": 89.99,
+      "image": "https://imgs.search.brave.com/wED7DzC1tbbQDnoU1ic61CNwOsjJWcYZVdet3TcZl_c/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNTYv/OTk3LzU2OS9zbWFs/bC9hLWRldGFpbGVk/LWZyb250LWFuZC1i/YWNrLXZpZXctb2Yt/YS1qYWNrZXQtZnJl/ZS1wbmcucG5n"
+    },
+    {
+      "id": "17",
+      "name": "Men's Sweatshirt",
+      "category": "Sweatshirts",
+      "gender": "Men",
+      "price": 27.49,
+      "image": "https://imgs.search.brave.com/NqivA4aUVs4Cc4Tj6g7Fc-1tNh2TPHRRhIWN9hDgA8w/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNDcv/MjQ5LzMzNS9zbWFs/bC9zd2VhdGVyLXNo/aXJ0LWhvb2RpZS1p/c29sYXRlZC1wbmcu/cG5n"
+    },
+    {
+      "id": "18",
+      "name": "Denim Shirt",
+      "category": "Shirts",
+      "gender": "Men",
+      "price": 42,
+      "image": "https://imgs.search.brave.com/rja9lhhy9JhSimfYUBHxzuaRcpXh59KLiUeWpy6XB08/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNDkv/Nzk2LzE5OC9zbWFs/bC9hLWRlbmltLWph/Y2tldC1vbi1hLXRy/YW5zcGFyZW50LWJh/Y2tncm91bmQtZnJl/ZS1wbmcucG5n"
+    },
+    {
+      "id": "19",
+      "name": "Relaxed Fit Jeans",
+      "category": "Jeans",
+      "gender": "Men",
+      "price": 51,
+      "image": "https://imgs.search.brave.com/yR66eKvcN0q2wZf43ziC8KshNSTKzs-TNtENaXzBv0M/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMjEv/OTQ5LzgxOS9zbWFs/bC9ibHVlLWRlbmlt/LXNob3J0cy1pc29s/YXRlZC1vbi1hLXRy/YW5zcGFyZW50LWJh/Y2tncm91bmQtcG5n/LnBuZw"
+    },
+    {
+      "id": "20",
+      "name": "Lightweight Jacket",
+      "category": "Jackets",
+      "gender": "Men",
+      "price": 65,
+      "image": "https://imgs.search.brave.com/7k22gkHB2M-A_y5KsE8B1su6ehRDT2dpJtxgVYCaZuc/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNTUv/NDUxLzg3Ny9zbWFs/bC9zdHlsaXNoLWxp/Z2h0d2VpZ2h0LWJv/bWJlci1qYWNrZXQt/cGVyZmVjdC1mb3It/Y2FzdWFsLW91dGlu/Z3Mtb3ItZmFzaGlv/bi1mb3J3YXJkLWxv/b2tzLWluLXZhcmlv/dXMtc2Vhc29ucy1m/cmVlLXBuZy5wbmc"
+    },
+    {
+      "id": "21",
+      "name": "Palazo",
+      "category": "Palazo Set",
+      "gender": "Women",
+      "price": 45.99,
+      "image": "https://imgs.search.brave.com/rgKEefDUxQT92k8HGX9LRNwAS_1bh51_RWXmH9aYFSs/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNjUv/NzY0LzI3My9zbWFs/bC9lbGVnYW50LXdo/aXRlLWRyZXNzLWRl/c2lnbi1mb3ItZm9y/bWFsLWV2ZW50cy1h/bmQtY2VsZWJyYXRp/b25zLXBuZy5wbmc"
+    },
+    {
+      "id": "22",
+      "name": "Skinny Jeans",
+      "category": "Jeans",
+      "gender": "Women",
+      "price": 52,
+      "image": "https://imgs.search.brave.com/01QPbFUbdc5gnu5S5OpX7bEzuMY-avndjR6IQ0cx1xE/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNTEv/MTgzLzc3MS9zbWFs/bC9yaXBwZWQtZGVu/aW0tamVhbnMtYmx1/ZS1kaXN0cmVzc2Vk/LWplYW5zLWZhc2hp/b25hYmxlLWplYW5z/LXNraW5ueS1qZWFu/cy1jYXN1YWwtd2Vh/ci1wbmcucG5n"
+    },
+    {
+      "id": "23",
+      "name": "Tank Top",
+      "category": "Tank Tops",
+      "gender": "Women",
+      "price": 15.99,
+      "image": "https://imgs.search.brave.com/2lUkV8GC2k2teJFmZDf_CB_VToIbBQGsGlqcFXixZiM/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNTAv/MTYxLzA1OC9zbWFs/bC9hLXllbGxvdy10/YW5rLXRvcC1vbi1h/LXRyYW5zcGFyZW50/LWJhY2tncm91bmQt/ZnJlZS1wbmcucG5n"
+    },
+    {
+      "id": "24",
+      "name": "Leggings",
+      "category": "Leggings",
+      "gender": "Women",
+      "price": 22,
+      "image": "https://imgs.search.brave.com/3fLHaz1qSxUhFQyzFhdIjIyQc8rH4bDiNmhxY9uLCSY/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/cG5nbWFydC5jb20v/ZmlsZXMvMjIvTGVn/Z2luZ3MtUE5HLUNs/aXBhcnQucG5n"
+    },
+    {
+      "id": "25",
+      "name": "Pleated Skirt",
+      "category": "Skirts",
+      "gender": "Women",
+      "price": 34.5,
+      "image": "https://imgs.search.brave.com/KfEzsQGBNJZGbG7UiL47Mf0Q82mdMlS0bOvY7TVryN0/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNDUv/OTEzLzI2MS9zbWFs/bC9lbGVnYW50LWJl/aWdlLXBsZWF0ZWQt/bWlkaS1za2lydC1j/dXQtb3V0LXN0b2Nr/LXBuZy5wbmc"
+    },
+    {
+      "id": "26",
+      "name": "Women's Hoodie",
+      "category": "Hoodies",
+      "gender": "Women",
+      "price": 38.99,
+      "image": "https://imgs.search.brave.com/BJip3ZRL8-dC8eQUGO94cydUIm7XotI7YkrMGe1Yk3I/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNTcv/MTg2Lzg1Ni9zbWFs/bC9hLWdyYXktaG9v/ZGllLXdpdGgtZnJv/bnQtcG9ja2V0LWFu/ZC1kcmF3c3RyaW5n/LWhvb2QtcGVyZmVj/dC1mb3ItY2FzdWFs/LXdlYXItcG5nLnBu/Zw"
+    },
+    {
+      "id": "27",
+      "name": "Crop Sweatshirt",
+      "category": "Sweatshirts",
+      "gender": "Women",
+      "price": 29.99,
+      "image": "https://imgs.search.brave.com/fDxHc4K2g002kmKE5fap6rmoukDzGBEwm3uVJqDjXhQ/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNDQv/MDEzLzEzMi9zbWFs/bC9yZWFsaXN0aWMt/Z3JlZW4tc3dlYXRz/aGlydC1vbi10cmFu/c3BhcmVudC1iYWNr/Z3JvdW5kLXBuZy5w/bmc"
+    },
+    {
+      "id": "28",
+      "name": "Blazer",
+      "category": "Blazers",
+      "gender": "Women",
+      "price": 67.99,
+      "image": "https://imgs.search.brave.com/USYDb6dApFYcBPz5vKJnMmSiyGJO0KkRIivhkYRNx4s/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNjIv/ODAzLzM5NS9zbWFs/bC93b21hbi1pbi1i/bHVlLWJsYXplci10/b3Jzby12aWV3LWN1/dC1vdXQtdHJhbnNw/YXJlbnQtcG5nLnBu/Zw"
+    },
+    {
+      "id": "29",
+      "name": "Casual Shirt",
+      "category": "Shirts",
+      "gender": "Women",
+      "price": 28,
+      "image": "https://imgs.search.brave.com/k-8JFvy5z2rmKAJb_oL2ijTMV7Abheg8IGdfWAxPwXM/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNTcv/OTgxLzg3Ni9zbWFs/bC90aGUtc3R5bGlz/aC13aGl0ZS1zaGly/dC13aXRoLXJvbGxl/ZC1zbGVldmVzLXBl/cmZlY3QtZm9yLWNh/c3VhbC1vci1mb3Jt/YWwtd2Vhci1wbmcu/cG5n"
+    },
+    {
+      "id": "30",
+      "name": "Formal Tops",
+      "category": "Tops",
+      "gender": "Women",
+      "price": 39,
+      "image": "https://imgs.search.brave.com/FA3vTaqsQ-THshD14YPkbhV_PJVvqBSwbpvJjwLDiPk/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNTcv/OTgxLzkwOC9zbWFs/bC9mbG93aW5nLXdo/aXRlLXNoaXJ0LXdp/dGgtbG9uZy1zbGVl/dmVzLWFuZC1idXR0/b24tdXAtZGVzaWdu/LXNob3djYXNpbmct/ZWxlZ2FuY2UtYW5k/LXN0eWxlLXBlcmZl/Y3QtZm9yLXZhcmlv/dXMtb2NjYXNpb25z/LXBuZy5wbmc"
+    },
+    {
+      "id": "31",
+      "name": "Cardigan",
+      "category": "Cardigans",
+      "gender": "Women",
+      "price": 31.99,
+      "image": "https://imgs.search.brave.com/kVCD-cMS6QOy7p0y5qKau3Xfo0PSt5C9E2Bi8Qe6uN8/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9wbmcu/cG5ndHJlZS5jb20v/cG5nLXZlY3Rvci8y/MDIzMDcyOC9vdXJt/aWQvcG5ndHJlZS1j/YXJkaWdhbi1jbGlw/YXJ0LWNhcmRpZ2Fu/LXRoYXQtaXMtZHJh/d24td2l0aC1wYXRj/aGVzLW9uLWl0LWNh/cnRvb24tdmVjdG9y/LXBuZy1pbWFnZV82/ODA2NDU3LnBuZw"
+    },
+    {
+      "id": "32",
+      "name": "Women’s Overalls",
+      "category": "Classic Wear",
+      "gender": "Women",
+      "price": 58,
+      "image": "https://imgs.search.brave.com/a-GuHmKkRVpz8WNCB-IFWWo7IRj3CubQbUHs8WaVgdI/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNTQv/MzE4LzYzNi9zbWFs/bC9jbGFzc2ljLWdy/ZWVuLWV2ZW5pbmct/ZHJlc3MtaWxsdXN0/cmF0aW9uLWZyZWUt/cG5nLnBuZw"
+    },
+    {
+      "id": "33",
+      "name": "Women’s Suit",
+      "category": "Suits",
+      "gender": "Women",
+      "price": 139,
+      "image": "https://imgs.search.brave.com/0M71jH8Glh8l-2tqW8MKq3pMD4uXV8wSxnzn3kc5w5M/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNTQv/NzEyLzg1MS9zbWFs/bC9jYXN1YWwtc3Vp/dC1idXNpbmVzc3dv/bWFuLWF0dGlyZS1t/b2NrdXAtZm9yLXBv/cnRyYWl0LWlkLXBh/c3Nwb3J0LWlzb2xh/dGVkLW9uLXRyYW5z/cGFyZW50LWJhY2tn/cm91bmQtcG5nLnBu/Zw"
+    },
+    {
+      "id": "34",
+      "name": "Frock",
+      "category": "Partywear",
+      "gender": "Women",
+      "price": 49,
+      "image": "https://imgs.search.brave.com/iwLWb509lFOqFm4OKcGpminFyXijQE_4s4E3kJVwvLA/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNDIv/MTU0Lzc3NC9zbWFs/bC9haS1nZW5lcmF0/ZWQtYmVhdXRpZnVs/LXdvbWVuLWRyZXNz/LWlzb2xhdGVkLW9u/LXRyYW5zcGFyZW50/LWJhY2tncm91bmQt/ZnJlZS1wbmcucG5n"
+    },
+    {
+      "id": "35",
+      "name": "Loungewear Pajama",
+      "category": "Loungewear",
+      "gender": "Women",
+      "price": 27.99,
+      "image": "https://imgs.search.brave.com/DoNYMnSiWkNZby0jQMmPpR7lzuM6GiFKXDkK2dZPwQI/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNTQv/ODQ0LzQwNS9zbWFs/bC9jb21mb3J0YWJs/ZS1hbmQtd2FybS10/aGVybWFsLXBhamFt/YS1zZXRzLWluLWNv/bG9yZnVsLWNoZWNr/ZXJlZC1wYXR0ZXJu/cy1oaWdobGlnaHRp/bmctc29mdC1mYWJy/aWMtYW5kLWVsYXN0/aWMtY3VmZnMtaWRl/YWwtZm9yLWxvdW5n/ZXdlYXItZnJlZS1w/bmcucG5n"
+    },
+    {
+      "id": "36",
+      "name": "Mini Skirt",
+      "category": "Skirts",
+      "gender": "Women",
+      "price": 25,
+      "image": "https://imgs.search.brave.com/xfbYEZQeVCfO_FyXOWHT0gWgH5aB2jmi-8vZvNM4JTk/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNTUv/MDgyLzQ3Ny9zbWFs/bC9zdHlsaXNoLWNv/cmFsLW1pbmktc2tp/cnQtcGVyZmVjdC1m/b3Itc3VtbWVyLWZh/c2hpb24tYW5kLW91/dGZpdHMtZnJlZS1w/bmcucG5n"
+    },
+    {
+      "id": "37",
+      "name": "Women’s Padded Jacket",
+      "category": "Jackets",
+      "gender": "Women",
+      "price": 79.99,
+      "image": "https://imgs.search.brave.com/t4JYJkD3niwDP6cdzn7tAEMI6diDj2By7Lli6syxQHc/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNDgv/NTU5Lzk5Ni9zbWFs/bC93b21lbi1ncmV5/LWhvb2RlZC13YXJt/LXNwb3J0LXB1ZmZl/ci1qYWNrZXQtaXNv/bGF0ZWQtYWdhaW5z/dC10cmFuc3BhcmVu/dC1iYWNrZ3JvdW5k/LXBuZy5wbmc"
+    },
+    {
+      "id": "38",
+      "name": "Women’s Polo",
+      "category": "Polo Shirts",
+      "gender": "Women",
+      "price": 20.99,
+      "image": "https://imgs.search.brave.com/Nwul8SZdK_yp5Dhjx1LteYoY4xIS6UCWFlW978-Xm-A/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNDAv/NTI5LzYxMC9zbWFs/bC9haS1nZW5lcmF0/ZWQtM2QtcmVuZGVy/aW5nLW9mLWEtcG9s/by1zaGlydC1mb3It/bWFuLWFuZC13b21h/bi1vbi10cmFuc3Bh/cmVudC1iYWNrZ3Jv/dW5kLWFpLWdlbmVy/YXRlZC1wbmcucG5n"
+    },
+    {
+      "id": "39",
+      "name": "Casual T-Shirt",
+      "category": "T-Shirts",
+      "gender": "Women",
+      "price": 17,
+      "image": "https://imgs.search.brave.com/Ay-Rl8SXeqs9CZC9NzqCOU4Sv-xmdSl_WJewejqwjfY/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNTkv/MDA2LzQ3Mi9zbWFs/bC9icmlnaHQtdHVy/cXVvaXNlLXNjb29w/LW5lY2stY3JvcC10/b3Atc3VtbWVyLWNh/c3VhbC1mYXNoaW9u/LXBuZy5wbmc"
+    },
+    {
+      "id": "40",
+      "name": "Long Coat",
+      "category": "Coats",
+      "gender": "Women",
+      "price": 92,
+      "image": "https://imgs.search.brave.com/Z4jtEoEVQ-7oaLjPe2U0oi3swbNvv1oXzVfRpeakTkY/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNDAv/NTMzLzE1NC9zbWFs/bC9haS1nZW5lcmF0/ZWQtM2QtcmVuZGVy/aW5nLW9mLWEtd2lu/dGVyLWxvbmctY29h/dC1vbi10cmFuc3Bh/cmVudC1iYWNrZ3Jv/dW5kLWFpLWdlbmVy/YXRlZC1wbmcucG5n"
+    },
+    {
+      "id": "41",
+      "name": "Kids T-Shirt",
+      "category": "T-Shirts",
+      "gender": "Kids",
+      "price": 12.99,
+      "image": "https://imgs.search.brave.com/yWaup9hzSG4-XlJXwmmGRB0K0grpjQRdHL75CHRN4tk/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNTkv/NTkxLzI5Ni9zbWFs/bC90d28tZ3JheS10/LXNoaXJ0cy1mb3It/Y2hpbGRyZW4taXNv/bGF0ZWQtb24tYS10/cmFuc3BhcmVudC1i/YWNrZ3JvdW5kLWN1/dC1vdXQtdHJhbnNw/YXJlbnQtcG5nLnBu/Zw"
+    },
+    {
+      "id": "42",
+      "name": "Kids Jeans",
+      "category": "Jeans",
+      "gender": "Kids",
+      "price": 22,
+      "image": "https://imgs.search.brave.com/y3GmHho_eF5rC13GYz5otEmzIieFbZdkV3GWdqvAgfM/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNTUv/MjM2LzE5My9zbWFs/bC9ibHVlLWplYW5z/LWZvci1jaGlsZHJl/bi1mYXNoaW9uYWJs/ZS1zdHlsZS1wbmcu/cG5n"
+    },
+    {
+      "id": "43",
+      "name": "Kids Hoodie",
+      "category": "Hoodies",
+      "gender": "Kids",
+      "price": 18.99,
+      "image": "https://imgs.search.brave.com/zUgIzjWJLsX6vPKygygim84w1ZtTcctkEJyXEpTrSf4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzg5LzFj/Lzc5Lzg5MWM3OTJk/ZWFlZDA0OWFkODk2/ODI0MGQ4N2Y0Njk0/LnBuZw"
+    },
+    {
+      "id": "44",
+      "name": "Floral Frock",
+      "category": "Dresses",
+      "gender": "Kids",
+      "price": 29.99,
+      "image": "https://imgs.search.brave.com/ODKWP9ZvfG6r4aACdHUxjFVI88vaqAlBwOKNS9mNM00/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNTkv/MDY2LzUyOS9zbWFs/bC9pbXByZXNzaXZl/LWNvbnRlbXBvcmFy/eS1mbG93ZXItZ2ly/bC1kcmVzcy1waW5r/LXR1bGxlLWlzb2xh/dGVkLWZvci1jaGls/ZHJlbi1zLWZhc2hp/b24taGlnaC1yZXNv/bHV0aW9uLXBuZy5w/bmc"
+    },
+    {
+      "id": "45",
+      "name": "Kids Shorts",
+      "category": "Shorts",
+      "gender": "Kids",
+      "price": 14,
+      "image": "https://imgs.search.brave.com/aOm01mGUlhjJXesxKDGHatQeK8GEWjlGeTnreGRtkbs/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNTgv/OTg5LzgzOC9zbWFs/bC9raWRzLWluLWJy/aWdodC1zdW1tZXIt/b3V0Zml0cy1wbGF5/aW5nLXBuZy5wbmc"
+    },
+    {
+      "id": "46",
+      "name": "Boys T-Shirt",
+      "category": "Shirts",
+      "gender": "Kids",
+      "price": 19.5,
+      "image": "https://imgs.search.brave.com/Fh_co5gRObKJBIEjICKsr44jfpgrLr_90Di8CxX5H2M/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNTcv/OTgyLzM4MS9zbWFs/bC9jaGlsZC13ZWFy/aW5nLXdoaXRlLXBv/bG8tc2hpcnQtYW5k/LWRlbmltLXNob3J0/cy1oYW5kcy1pbi1w/b2NrZXRzLWV4dWRp/bmctY2FzdWFsLXZp/YmUtcG5nLnBuZw"
+    },
+    {
+      "id": "47",
+      "name": "Girls Skirt",
+      "category": "Skirts",
+      "gender": "Kids",
+      "price": 16.5,
+      "image": "https://imgs.search.brave.com/u7VwHbX9unS5tSzYEI51lu016-XpOpnV3g_3CSP2KlY/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNTkv/NTkxLzA2OC9zbWFs/bC9jb2xvcmZ1bC1w/bGVhdGVkLXNraXJ0/LXdpdGgtZWxhc3Rp/Yy13YWlzdGJhbmQt/ZmFzaGlvbi1hcHBh/cmVsLWN1dC1vdXQt/dHJhbnNwYXJlbnQt/cG5nLnBuZw"
+    },
+    {
+      "id": "48",
+      "name": "Kids Jacket",
+      "category": "Jackets",
+      "gender": "Kids",
+      "price": 32,
+      "image": "https://imgs.search.brave.com/VWZmqhjabyE_L5hq_SHwdCrDRghAMzMIHBL7jUb0lNs/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvcHJl/dmlld3MvMDU1LzU0/OS83NzIvbm9uXzJ4/L2NvenktcGluay1o/b29kaWUtamFja2V0/LWZvci1raWRzLXBu/Zy5wbmc"
+    },
+    {
+      "id": "49",
+      "name": "Kids Sweatshirt",
+      "category": "Sweatshirts",
+      "gender": "Kids",
+      "price": 20.99,
+      "image": "https://imgs.search.brave.com/-th23kN13o2h_51hpjCqTg7WPG8q04jE0QPraFkk5xc/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNTcv/OTgyLzI0NS9zbWFs/bC9ncmF5LXQtc2hp/cnQtZm9yLWtpZHMt/ZGlzcGxheWVkLWZy/b20tZnJvbnQtYW5k/LWJhY2stdmlld3Mt/c2hvd2Nhc2luZy1j/YXN1YWwtc3R5bGUt/cG5nLnBuZw"
+    },
+    {
+      "id": "50",
+      "name": "Kids Joggers",
+      "category": "Activewear",
+      "gender": "Kids",
+      "price": 18,
+      "image": "https://imgs.search.brave.com/NEVsAAoRLrdAJa4cEdWKRZcvsucUsqo-vCaqgJl57zA/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNTUv/MzMwLzM5NC9zbWFs/bC95b3VuZy1jaGls/ZC1pbi15ZWxsb3ct/aG9vZGllLWFuZC1w/YW50cy1zdGFuZHMt/ZmFjaW5nLWF3YXkt/c2hvd2Nhc2luZy1w/bGF5ZnVsLWFuZC10/cmVuZHktZmFzaGlv/bi1zdHlsZS1pc29s/YXRlZC1vbi10cmFu/c3BhcmVudC1iYWNr/Z3JvdW5kLWZyZWUt/cG5nLnBuZw"
+    },
+    {
+      "id": "51",
+      "name": "Pajama Set",
+      "category": "Loungewear",
+      "gender": "Kids",
+      "price": 16.99,
+      "image": "https://imgs.search.brave.com/3v-lrF7BzZAHbf4KG-IV1ECSZqdKbKgM3ONkuCwV5dM/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNTMv/NjQ2Lzk5NC9zbWFs/bC9zdHlsaXNoLWdp/cmwtaW4tcG9sa2Et/ZG90LXBhamFtYS1z/ZXRzLXBlcmZlY3Qt/Zm9yLWNvbWZvcnRh/YmxlLWhvbWUtd2Vh/ci1hbmQtcmVsYXhh/dGlvbi1wbmcucG5n"
+    },
+    {
+      "id": "52",
+      "name": "Kids Coat",
+      "category": "Coats",
+      "gender": "Kids",
+      "price": 39.99,
+      "image": "https://imgs.search.brave.com/k9-FYSTtDIpPAiA0oT5D_7pt7bkOhWhAgB9jClw5xqM/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNDcv/MDg3LzMwMy9zbWFs/bC95b3VuZy1ib3kt/c3RhbmRpbmctYW5k/LXdlYXJpbmctbG9u/Zy1jb2F0LW9uLXRy/YW5zcGFyZW50LWJh/Y2tncm91bmQtcG5n/LnBuZw"
+    },
+    {
+      "id": "53",
+      "name": "Graphic Tee",
+      "category": "T-Shirts",
+      "gender": "Kids",
+      "price": 13.5,
+      "image": "https://imgs.search.brave.com/FN7yVTdb1Mnsjk5b_Z8c0JL-wW0MDIBuY50G79sutRs/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9wbmcu/cG5ndHJlZS5jb20v/cG5nLXZlY3Rvci8y/MDI0MTIwMy9vdXJt/aWQvcG5ndHJlZS1t/b2Rlcm4tZ3JhcGhp/Yy10ZWVzLWZyZXNo/LWFuZC10cmVuZHkt/dC1zaGlydC1kZXNp/Z25zLXBuZy1pbWFn/ZV8xMzMwNDgyOS5w/bmc"
+    },
+    {
+      "id": "54",
+      "name": "Girls Party Wear",
+      "category": "Frock",
+      "gender": "Kids",
+      "price": 24,
+      "image": "https://imgs.search.brave.com/ngtIQ4qY95iWto4FrFSkRHvvTmaT_TpwQLXjJ7RQslg/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNDAv/MzI0LzQ0NC9zbWFs/bC9haS1nZW5lcmF0/ZWQta2lkcy1kcmVz/cy1pc29sYXRlZC1v/bi10cmFuc3BhcmVu/dC1iYWNrZ3JvdW5k/LWZyZWUtcG5nLnBu/Zw"
+    },
+    {
+      "id": "55",
+      "name": "Kids Blazer",
+      "category": "Blazers",
+      "gender": "Kids",
+      "price": 36,
+      "image": "https://imgs.search.brave.com/ozaJtlHzZXfpaPcCnp85kLpTcmwubLxo-71Mm8gDOVk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNjMv/MTM2Lzg0OS9zbWFs/bC9mb3JtYWwtbGln/aHQtZ3JheS1zY2hv/b2wtYmxhemVyLXdp/dGgtYmx1ZS1zdHJp/cGVkLWFuZC1zb2xp/ZC10aWUtaXNvbGF0/ZWQtb24tdHJhbnNw/YXJlbnQtYmFja2dy/b3VuZC1wbmcucG5n"
+    },
+    {
+      "id": "56",
+      "name": "Kids Polo Shirt",
+      "category": "Polo Shirts",
+      "gender": "Kids",
+      "price": 17,
+      "image": "https://imgs.search.brave.com/t5vVcU1YxFl40Z71OIYp_jljMw2DdxA_iienOD9elZI/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNTEv/OTU2LzI4OC9zbWFs/bC9zZXQtb2YtdGhy/ZWUtcG9sby1zaGly/dHMtaW4tcmVkLWJs/YWNrLWFuZC1uYXZ5/LWJsdWUtb24tYS10/cmFuc3BhcmVudC1i/YWNrZ3JvdW5kLXBu/Zy5wbmc"
+    },
+    {
+      "id": "57",
+      "name": "Kids Tank Top",
+      "category": "Tank Tops",
+      "gender": "Kids",
+      "price": 10.99,
+      "image": "https://imgs.search.brave.com/OI_9hFNHNV17WrZJYIu2zt4_c3I0ZQaYLL-IRzovwac/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNTkv/NTI2LzU5MC9zbWFs/bC9jb2xvcmZ1bC1z/dHJpcGVkLXRhbmst/dG9wLWRlc2lnbi1m/b3ItZmFzaGlvbi1h/bmQtYXBwYXJlbC1p/bmR1c3RyeS1wbmcu/cG5n"
+    },
+    {
+      "id": "58",
+      "name": "Winter Set",
+      "category": "Suits",
+      "gender": "Kids",
+      "price": 40,
+      "image": "https://imgs.search.brave.com/uK_MGCcORBDMyxRAXaYUA1E_F5giYkCqSYMHH-EKLkQ/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMTYv/NTMyLzg1NS9zbWFs/bC93YXRlcmNvbG9y/LXN3ZWF0ZXItd2lu/dGVyLXBuZy5wbmc"
+    },
+    {
+      "id": "59",
+      "name": "Sweatpants",
+      "category": "Trousers",
+      "gender": "Kids",
+      "price": 15.99,
+      "image": "https://imgs.search.brave.com/uRhMdZbDbGaFs2JaW5Gxm25GkhPtc7m-CdrXNFXEai8/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNTYv/ODE3Lzk3NC9zbWFs/bC9zdHlsaXNoLXdo/aXRlLXRyb3VzZXJz/LXdpdGgtbW9kZXJu/LWRlc2lnbi1hbmQt/cm9sbGVkLWN1ZmZz/LXBlcmZlY3QtZm9y/LWNhc3VhbC13ZWFy/LXBuZy5wbmc"
+    },
+    {
+      "id": "60",
+      "name": "Girls Cardigan",
+      "category": "Cardigans",
+      "gender": "Kids",
+      "price": 22,
+      "image": "https://imgs.search.brave.com/1LoX51L0cs-uuVCAnpZfa-rPK9LXEQvNQPQdqKGCkfc/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9wbmcu/cG5ndHJlZS5jb20v/cG5nLXZlY3Rvci8y/MDI0MDUwOC9vdXJt/aWQvcG5ndHJlZS1w/aW5rLWNhcmRpZ2Fu/LXBuZy1pbWFnZV8x/MjM4MTE3NS5wbmc"
+    }
+  ]
+}
