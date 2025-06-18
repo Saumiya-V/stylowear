@@ -53,7 +53,7 @@ export const useProductColumns = () => {
         );
       }
     }),
-  ], [handleDelete]);
+  ],[]);
 
   return columns;
 };

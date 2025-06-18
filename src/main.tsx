@@ -8,6 +8,7 @@ import { AuthProvider } from './context/authContext/AuthContext'
 import { RouterProvider } from './routes/RouterProvider'
 import { ErrorBoundary } from './components/errorboundary/ErrorBoundary'
 
+
 const queryClient = new QueryClient()
 
 createRoot(document.getElementById('root')!).render(

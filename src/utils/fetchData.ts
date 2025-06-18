@@ -2,10 +2,17 @@ import { Base_URL } from "@/constants/ProductApi";
 import axios from "axios";
 
 //Data fetching based on gender
-export const fetchDataByGender = async (url: string,gender:string) => {
-  const { data } = await axios.get(`${url}?gender=${gender}`);
-  return data;
+
+export const fetchDataByGender = async (url: string, gender: string, pageParam: number) => {
+  const response = await axios.get(`${url}?gender=${gender}&_limit=10&_page=${pageParam}`)
+
+  return {
+    data: response.data,
+    totalCount: parseInt(response.headers['x-total-count'] || '0'),
+  };
 };
+
+
 
 //Overall product fetch
 export const fetchData = async ()=>{

@@ -1,12 +1,12 @@
-import { useAuth } from "@/context/authContext/AuthContext";
-import { Navigate } from "@tanstack/react-router";
-import React from "react";
+// import { useAuth } from "@/context/authContext/AuthContext";
+// import { Navigate } from "@tanstack/react-router";
+// import React from "react";
 
-export const ProtectedRoute = ({ children }: { children: React.ReactNode }) => {
-  const { user, loading } = useAuth();
+// export const ProtectedRoute = ({ children }: { children: React.ReactNode }) => {
+//   const { user } = useAuth();
 
-  if (loading) return <div>Loading...</div>;
-  if (!user) return <Navigate to="/login" />;
+//   if (loading) return <div>Loading...</div>;
+//   if (!user) return <Navigate to="/login" />;
 
-  return <>{children}</>;
-};
+//   return <>{children}</>;
+// };

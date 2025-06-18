@@ -30,7 +30,7 @@ const Cart = () => {
 
   return (
   <div className="p-8 max-w-7xl mx-auto">
-  <h3 className="text-center font-bold text-2xl mb-8">Your Cart</h3>
+  <h3 className="text-center font-bold text-2xl mb-8">{cart.length === 0?"Your Cart is Empty":"Your Cart"}</h3>
 
   <div className="grid grid-cols-4 gap-4 px-6 font-semibold text-lg border-b pb-2">
     <h3>Item</h3>
@@ -45,7 +45,7 @@ const Cart = () => {
         <div key={i} className="grid grid-cols-4 gap-4 items-center p-4">
           {/* Item */}
           <div className="flex items-center gap-4">
-            <img className="w-20 h-20 object-cover rounded" src={item.image} alt={item.name} />
+            <img className="w-25 h-25 object-cover rounded" src={item.image} alt={item.name} />
             <div>
               <h2 className="font-semibold">{item.name}</h2>
               <Button

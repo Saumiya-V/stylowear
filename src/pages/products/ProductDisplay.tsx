@@ -14,7 +14,7 @@ import { formatter } from '@/utils/currencyFormatter';
 import type { PropType } from '@/types/type';
 import type { Item } from '@/types/type';
 import { Base_URL } from '@/constants/ProductApi';
-import { useQuery } from "@tanstack/react-query";
+import { useInfiniteQuery } from "@tanstack/react-query";
 
 
 
@@ -22,31 +22,40 @@ const ProductDisplay = ({gender}:PropType) => {
 const dispatch=useDispatch<AppDispatch>()
 
 
- const {data, isLoading, isError} = useQuery({
+ const {data,error,fetchNextPage,status,hasNextPage,isFetchingNextPage} = useInfiniteQuery({
     queryKey: ["clothes"],
-    queryFn: () => fetchDataByGender(Base_URL,gender),
+    queryFn: ({ pageParam = 1 }) => fetchDataByGender(Base_URL, gender, pageParam),
+    initialPageParam: 1,
+    getNextPageParam: (lastPage,allPages) => {
+    const loadedItems = allPages.reduce((total, page) => total + page.data.length, 0);
+    return loadedItems < lastPage.totalCount ? allPages.length + 1 : undefined;
+    }
  })
 
- console.log(data)
+
 
  const handleAddClick=(item:Item)=>{
    dispatch(addToCart(item))
 }
 
-if(isLoading){
+if(status === 'pending'){
     return <p>Loading...</p>
 }
 
- if(isError){
-    return <p>Error in fetching data</p>
+ if(status === 'error'){
+    return <>
+    <p>Error in fetching data</p>
+    <p>{error.message}</p>
+    </>
  }
 
 
   return (
     <>
     <div className='flex flex-wrap gap-10 mx-25 mt-10'>{
-     data.map((item:Item)=>{
-        return <Card key={item.id} className='w-58'>
+     data?.pages.map((page)=>{
+        return page.data.map((item:Item)=>{
+         return  <Card key={item.id} className='w-58'>
          <img src={item.image} alt="Cloth" className='h-40'/>
          <CardHeader> <CardTitle>{item.name}</CardTitle></CardHeader>
          <CardContent>
@@ -57,11 +66,14 @@ if(isLoading){
              <Button onClick={()=>handleAddClick(item)} className='cursor-pointer'>Add to cart</Button>
          </CardFooter>
         </Card>
+        })
      })
-
     }
         </div>
-    </>
+       <Button className="w-50 mx-auto mt-5 mb-5" onClick={() => fetchNextPage()} disabled={!hasNextPage || isFetchingNextPage}>
+  {isFetchingNextPage ? 'Loading...' : hasNextPage ? 'Load More' : 'No more items'}
+</Button>
+</>
   )
 }
 

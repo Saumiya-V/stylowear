@@ -40,7 +40,7 @@
     },
     {
       "id": "4",
-      "name": "Men's Formal Shirt",
+      "name": "Formal Shirt",
       "category": "Shirts",
       "gender": "Men",
       "price": 34.99,
@@ -72,7 +72,7 @@
     },
     {
       "id": "8",
-      "name": "Men's Trousers",
+      "name": "Trousers",
       "category": "Trousers",
       "gender": "Men",
       "price": 29.99,

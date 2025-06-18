@@ -1,4 +1,3 @@
-// routes/routes.tsx
 import {
   createRootRoute,
   createRoute,
@@ -19,7 +18,7 @@ import { ThemeProvider } from '@/context/themeContext/ThemeProvider'
 import { Provider } from 'react-redux'
 import { store } from '@/redux/store'
 import { EditStateProvider } from '@/context/editContext/EditContext'
-import { ProtectedRoute } from './ProtectedRoute'
+// import { ProtectedRoute } from './ProtectedRoute'
 
 const rootRoute = createRootRoute({
   component: () => (
@@ -92,9 +91,7 @@ const CartRoute = createRoute({
 const InventoryRoute = createRoute({
   path: '/inventory',
   getParentRoute: () => rootRoute,
-  component: ()=>(<ProtectedRoute>
-    <Inventory/>
-  </ProtectedRoute>),
+  component: Inventory,
   beforeLoad: requireRole(['admin']),
 })
 
@@ -102,10 +99,7 @@ const FormRoute = createRoute({
   path: '/form',
   getParentRoute: () => rootRoute,
   component: Form,
-  beforeLoad: requireRole(['admin']),
 })
-
-
 
 const UnauthorizedRoute = createRoute({
   path: '/unauthorized',

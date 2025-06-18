@@ -5,6 +5,7 @@ import { faUser } from '@fortawesome/free-solid-svg-icons';
 import { ModeToggle } from '../mode-toggle/ModeToggle';
 import { useTheme } from '../../context/themeContext/ThemeProvider';
 import { Link } from '@tanstack/react-router';
+import { Profile } from '../login-toggle/Profile';
 
 
 const Header = () => {
@@ -30,7 +31,7 @@ const Header = () => {
 
   {/* Icons */}
   <div className="flex items-center gap-10">
-    <Link to="/login"><FontAwesomeIcon icon={faUser} className="text-xl" /></Link>
+    <Profile/>
     <Link to="/cart"><FontAwesomeIcon icon={faCartShopping} className="text-xl" /></Link>
     <ModeToggle />
   </div>

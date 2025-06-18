@@ -4,10 +4,9 @@ import { useState } from "react"
 import type { Item } from "@/types/type"
 import { fetchData } from "@/utils/fetchData"
 import { Base_URL } from "@/constants/ProductApi"
-
-
 import { toast } from "react-toastify"
 import { useEdit } from "@/context/editContext/EditContext"
+
 
 export const useProducts = () => {
   const queryClient = useQueryClient()
@@ -24,7 +23,7 @@ export const useProducts = () => {
     queryFn: fetchData,
   })
 
-  const addNewItem = async (newItem: Item) => {
+  const addNewItem = async (newItem: Omit<Item,"id">) => {
     const { data } = await axios.post(Base_URL, newItem)
     return data
   }
@@ -52,20 +51,36 @@ export const useProducts = () => {
     },
   })
 
-  const deleteMutation = useMutation({
-    mutationFn: deleteItem,
-    onSuccess: () => {
-      queryClient.invalidateQueries({ queryKey: ["products"] })
-      toast.success("Item Deleted")
-    },
-  })
+const deleteMutation = useMutation({
+  mutationFn: deleteItem,
+  onSuccess: () => {
+    queryClient.invalidateQueries({ queryKey: ["products"] });
+    toast.success("Item Deleted");
+  },
+  onError: (error) => {
+    console.error("Delete failed:", error);
+    toast.error("Failed to delete item.");
+  }
+});
 
+   const updateMutation = useMutation({
+  mutationFn: updateItem,
+  onSuccess: () => {
+    queryClient.invalidateQueries({ queryKey: ["products"] });
+    setisEdit(false)
+    setEditItem(null)
+    toast.success("Item updated successfully!");
+  },
+  // onError: (error: any) => {
+  //   toast.error(`Update failed: ${error.message}`);
+  // },
+  
+});
 
 
   const handleAddItem = () => {
     if (!newName || !newCategory || !newGender || !newPrice || !newImage) return
     addMutation.mutate({
-      id: data?.length ? data.length + 1 : 1,
       name: newName,
       category: newCategory,
       gender: newGender,
@@ -79,19 +94,6 @@ export const useProducts = () => {
       deleteMutation.mutate(id)
     }
   }
-
-   const updateMutation = useMutation({
-  mutationFn: updateItem,
-  onSuccess: () => {
-    queryClient.invalidateQueries({ queryKey: ["products"] });
-    setisEdit(false)
-    setEditItem(null)
-    toast.success("Item updated successfully!");
-  },
-  onError: (error: any) => {
-    toast.error(`Update failed: ${error.message}`);
-  },
-});
 
   return {
     data,
