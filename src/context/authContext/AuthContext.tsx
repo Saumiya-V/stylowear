@@ -1,6 +1,6 @@
-import { createContext, useContext,useState } from "react";
+import { createContext, useContext,useEffect,useState } from "react";
 import { auth } from "@/utils/firebase";
-import { signInWithEmailAndPassword, signOut} from "firebase/auth";
+import { onAuthStateChanged, signInWithEmailAndPassword, signOut} from "firebase/auth";
 import type { AuthContextType, User } from "@/types/type";
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
@@ -31,6 +31,24 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
     setUser(null);
     localStorage.removeItem("role");
   };
+
+     useEffect(() => {
+    const unsubscribe = onAuthStateChanged(auth, async (firebaseUser) => {
+      if (firebaseUser?.email) {
+        const res = await fetch(`http://localhost:3000/users?email=${firebaseUser.email}`);
+        const data = await res.json();
+        const role = data[0]?.role || "user";
+
+        localStorage.setItem("role", role);
+        setUser({ email: firebaseUser.email, role });
+      } else {
+        setUser(null);
+        localStorage.removeItem("role");
+      }
+    });
+
+    return () => unsubscribe();
+  }, []);
 
 
   return (

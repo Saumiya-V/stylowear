@@ -1,0 +1,7 @@
+export const headerContainer = "flex items-center justify-between px-6 py-4 h-20 border-b shadow-md w-full bg-white dark:bg-black relative z-50"
+export const logoDiv = "flex-shrink-0"
+export const navDiv = "flex items-center gap-20 flex-grow justify-center"
+export const iconsDiv = "flex items-center gap-10"
+export const sunIcon = "h-[1.2rem] w-[1.2rem] scale-100 rotate-0 transition-all dark:scale-0 dark:-rotate-90"
+export const moonIcon = "absolute h-[1.2rem] w-[1.2rem] scale-0 rotate-90 transition-all dark:scale-100 dark:rotate-0"
+export const navList = "flex gap-10 font-semibold"

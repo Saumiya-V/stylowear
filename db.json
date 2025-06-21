@@ -3,14 +3,17 @@
     {
       "id": "1",
       "email": "admin@gmail.com",
-      "password": "Admin123",
       "role": "admin"
     },
     {
       "id": "2",
       "email": "user@gmail.com",
-      "password": "India123",
       "role": "user"
+    },
+    {
+      "email": "saumiya@gmail.com",
+      "role": "user",
+      "id": "cs9POkc"
     }
   ],
   "clothing": [
@@ -19,7 +22,7 @@
       "name": "Cotton T-Shirt",
       "category": "T-Shirts",
       "gender": "Men",
-      "price": 25.99,
+      "price": 54.99,
       "image": "https://imgs.search.brave.com/K_nUanw-RbZdFMbeAu7ku8AV8j8bOLKvPs94zFsfoY4/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNTkv/NTUzLzQ2OS9zbWFs/bC9jbGFzc2ljLW1l/bi1zLXdoaXRlLWxv/bmctc2xlZXZlLWRy/ZXNzLXNoaXJ0LWZv/cm1hbC13ZWFyLWJ1/c2luZXNzLWFwcGFy/ZWwtY3Jpc3AtY290/dG9uLWZhYnJpYy1w/bmcucG5n"
     },
     {
@@ -83,7 +86,7 @@
       "name": "Active Joggers",
       "category": "Activewear",
       "gender": "Men",
-      "price": 44.99,
+      "price": 45.99,
       "image": "https://imgs.search.brave.com/FM8w9FgNDg142bXboF8P1_U8upY7X4qrgwmsNiSyeag/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNTYv/ODE4LzAyOS9zbWFs/bC93aGl0ZS1hdGhs/ZXRpYy1zaG9lcy1h/bmQtbG9vc2UtcGFu/dHMtaW4tbW90aW9u/LXNob3djYXNpbmct/ZHluYW1pYy1zdHls/ZS1wbmcucG5n"
     },
     {
@@ -155,7 +158,7 @@
       "name": "Denim Shirt",
       "category": "Shirts",
       "gender": "Men",
-      "price": 42,
+      "price": 42.99,
       "image": "https://imgs.search.brave.com/rja9lhhy9JhSimfYUBHxzuaRcpXh59KLiUeWpy6XB08/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNDkv/Nzk2LzE5OC9zbWFs/bC9hLWRlbmltLWph/Y2tldC1vbi1hLXRy/YW5zcGFyZW50LWJh/Y2tncm91bmQtZnJl/ZS1wbmcucG5n"
     },
     {
@@ -493,6 +496,22 @@
       "gender": "Kids",
       "price": 22,
       "image": "https://imgs.search.brave.com/1LoX51L0cs-uuVCAnpZfa-rPK9LXEQvNQPQdqKGCkfc/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9wbmcu/cG5ndHJlZS5jb20v/cG5nLXZlY3Rvci8y/MDI0MDUwOC9vdXJt/aWQvcG5ndHJlZS1w/aW5rLWNhcmRpZ2Fu/LXBuZy1pbWFnZV8x/MjM4MTE3NS5wbmc"
+    },
+    {
+      "name": "efefe",
+      "category": "rwrw",
+      "gender": "wrwr",
+      "price": 11,
+      "image": "https://tanstack.com/table/latest/docs/guide/tables",
+      "id": "4ud9J93"
+    },
+    {
+      "name": "saree",
+      "category": "silk saree",
+      "gender": "Women",
+      "price": 9,
+      "image": "https://imgs.search.brave.com/fURTN46EdA2-bjf8MrhRDGEMphW4dSJdQFeJEpghBtI/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvaGQvZWxl/Z2FudC1wdXJwbGUt/c2FyZWUtbW9kZWwt/NGQ2amhsamlkY2R4/d3VmeC0yLnBuZw",
+      "id": "smFutzQ"
     }
   ]
 }

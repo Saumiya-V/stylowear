@@ -1,0 +1,5 @@
+export const Container = "w-full max-w-5xl mx-auto mt-10 overflow-hidden rounded-xl"
+export const ImgContainer = "flex transition-transform duration-500 ease-in-out"
+export const ImageStyles ="w-full shrink-0 object-cover h-[355px]"
+export const ControlsDiv = "absolute inset-0 flex items-center justify-between p-4"
+export const btn = "bg-white/50 hover:bg-white/80 text-black"

@@ -7,10 +7,11 @@ import { getCoreRowModel, getFilteredRowModel, getPaginationRowModel, useReactTa
 import { useProductColumns } from '@/hooks/useProductColumns';
 import { useProducts } from '@/hooks/useProducts';
 import { Input } from '@/components/ui/input';
+import { controlsDiv, tableContainer } from '@/styles/productStyles';
 
 
 const ProductTable = ()=>{
-  const {data:products=[]}=useProducts()
+ const {data:products=[]}=useProducts()
  const columns = useProductColumns()
   const [pagination, setPagination] = useState({
   pageIndex: 0,
@@ -31,7 +32,7 @@ const table = useReactTable<Item>({
 
 
   return (
-  <div className="p-6 overflow-x-auto rounded-lg shadow-md">
+  <div className={tableContainer}>
     <Input className='mb-5'
   type="text"
   value={globalFilter ?? ''}
@@ -39,7 +40,7 @@ const table = useReactTable<Item>({
   placeholder="Search for Clothes..."
 />
     <Table table={table}/>
-   <div className='flex items-center justify-center gap-2 mt-5'>
+   <div className={controlsDiv}>
       <Button  onClick={() => table.previousPage()} disabled={!table.getCanPreviousPage()}><ChevronLeft/></Button>
       <span>
         {table.getState().pagination.pageIndex + 1} of {' '}

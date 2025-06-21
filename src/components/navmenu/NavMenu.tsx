@@ -1,10 +1,11 @@
+import { navList } from "@/styles/headerStyles"
 import { Link } from "@tanstack/react-router"
 
 
 const NavMenu = () => {
   return (
      <div >
-      <ul className="flex gap-10 font-semibold">
+      <ul className={navList}>
         <li>
          <Link to="/men">MEN</Link>
         </li>

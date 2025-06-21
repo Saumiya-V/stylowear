@@ -1,33 +1,41 @@
-import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area"
-import { categoryList } from "@/constants/categoryList"
+import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
+import { categoryList } from "@/constants/categoryList";
+import {
+  headingStyle,
+  scrollAreaStyle,
+  wrapperStyle,
+  figureStyle,
+  imageContainerStyle,
+  imageStyle,
+  captionStyle,
+  categoryTextStyle,
+} from "@/styles/categoryStyles";
 
-export const Category=()=>{
+export const Category = () => {
   return (
     <>
-    <h3 className="text-xl text-center font-bold">Catalog</h3>
-    <ScrollArea className="w-lg rounded-md border mx-auto mt-5 whitespace-nowrap">
-      <div className="flex w-max space-x-4 p-4">
-        {categoryList.map((item) => (
-          <figure key={item.category} className="shrink-0">
-            <div className="overflow-hidden rounded-md">
-              <img
-                src={item.image}
-                alt={item.category}
-                className="aspect-[3/4] h-25 w-35 object-cover"
-                width={300}
-                height={400}
-              />
-            </div>
-            <figcaption className="text-muted-foreground pt-2 text-xs text-center">
-              <span className="text-foreground font-semibold">
-                {item.category}
-              </span>
-            </figcaption>
-          </figure>
-        ))}
-      </div>
-      <ScrollBar orientation="horizontal" />
-    </ScrollArea>
+      <h3 className={headingStyle}>Catalog</h3>
+      <ScrollArea className={scrollAreaStyle}>
+        <div className={wrapperStyle}>
+          {categoryList.map((item) => (
+            <figure key={item.category} className={figureStyle}>
+              <div className={imageContainerStyle}>
+                <img
+                  src={item.image}
+                  alt={item.category}
+                  className={imageStyle}
+                  width={300}
+                  height={400}
+                />
+              </div>
+              <figcaption className={captionStyle}>
+                <span className={categoryTextStyle}>{item.category}</span>
+              </figcaption>
+            </figure>
+          ))}
+        </div>
+        <ScrollBar orientation="horizontal" />
+      </ScrollArea>
     </>
-  )
-}
+  );
+};

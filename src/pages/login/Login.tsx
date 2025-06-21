@@ -14,6 +14,8 @@ import { auth } from "../../utils/firebase";
 import {  createUserWithEmailAndPassword } from "firebase/auth";
 import { useNavigate } from "@tanstack/react-router"
 import { useAuth } from "@/context/authContext/AuthContext"
+import axios from "axios"
+import { toast } from "react-toastify"
 
 
 const Login = () => {
@@ -37,16 +39,23 @@ const Login = () => {
       if (isSignInForm) {
         await login(email, password)
         const updatedRole =  localStorage.getItem("role")
-        if(updatedRole === "admin"){
+        if(updatedRole === "admin"){ 
           navigate({ to: "/inventory" }) 
+          toast.success("Logged In Successfully")
         }
         else{
           navigate({to:'/cart'})
+          toast.success("Logged In Successfully")
         }
       } else {
         const userCredential = await createUserWithEmailAndPassword(auth, email, password)
-        console.log(userCredential.user)
+        const UserMail = userCredential.user
+        await axios.post(`http://localhost:3000/users`, {
+            email: UserMail.email,
+            role: "user"
+         });
         navigate({ to: "/login" })
+        toast.success("Signed Up Successfully")
       }
     } catch (err: any) {
       setError(err.message || "Login failed")
@@ -67,9 +76,9 @@ const Login = () => {
         }}>
           <div className="flex flex-col gap-6">
             {!isSignInForm &&  <div className="grid gap-2">
-              <Label htmlFor="email">User Name</Label>
+              <Label htmlFor="userName">User Name</Label>
               <Input
-                id="name"
+                id="userName"
                 type="text"
                 placeholder="Name"
                 required

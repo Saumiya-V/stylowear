@@ -49,5 +49,7 @@ export type Props={
 }
 
 export type ErrorState = {
-  hasError:boolean
+  hasError:boolean;
+  error:Error | null;
+  errorInfo?:React.ErrorInfo | null
 }

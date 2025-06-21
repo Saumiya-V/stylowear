@@ -9,15 +9,17 @@ import { RouterProvider } from './routes/RouterProvider'
 import { ErrorBoundary } from './components/errorboundary/ErrorBoundary'
 
 
+
+
 const queryClient = new QueryClient()
 
 createRoot(document.getElementById('root')!).render(
- <ErrorBoundary>
-   <AuthProvider>
+<ErrorBoundary>
+     <AuthProvider>
     <QueryClientProvider client={queryClient}>
-      <RouterProvider />
-      <ToastContainer />
+      <RouterProvider/>
+      <ToastContainer/>
     </QueryClientProvider>
   </AuthProvider>
- </ErrorBoundary>
+</ErrorBoundary>
 )

@@ -1,0 +1,1 @@
+export const searchContainer = 'relative z-40 w-sm mt-5 mx-auto'

@@ -3,8 +3,8 @@ import axios from "axios";
 
 //Data fetching based on gender
 
-export const fetchDataByGender = async (url: string, gender: string, pageParam: number) => {
-  const response = await axios.get(`${url}?gender=${gender}&_limit=10&_page=${pageParam}`)
+export const fetchDataByGender = async ( gender: string, pageParam: number) => {
+  const response = await axios.get(`${Base_URL}?gender=${gender}&_limit=10&_page=${pageParam}`)
 
   return {
     data: response.data,

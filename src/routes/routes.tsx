@@ -31,7 +31,7 @@ const rootRoute = createRootRoute({
     </ThemeProvider>
   ),
   errorComponent: ({ error }) => (
-    <div className="p-4 text-red-500">
+    <div className="p-4 text-red-500 mx-auto mt-80 w-md border-1 border-red-500">
       <h2>Something went wrong 💥</h2>
       <pre>{error.message}</pre>
     </div>

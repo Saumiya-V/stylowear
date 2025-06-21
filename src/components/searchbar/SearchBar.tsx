@@ -1,3 +1,4 @@
+import { searchContainer } from '@/styles/searchBarStyles';
 import { Input } from '../ui/input';
 
 const SearchBar = ({
@@ -11,7 +12,7 @@ const SearchBar = ({
 
   return (
     <div
-      className=' relative z-40 w-sm mt-5 mx-auto'
+      className={searchContainer}
     >
       <Input
         type="text"

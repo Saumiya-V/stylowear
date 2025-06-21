@@ -8,15 +8,18 @@ import type { AppDispatch } from "@/redux/store";
 import type { Item } from "@/types/type";
 import { formatter } from "@/utils/currencyFormatter";
 import { fetchProduct } from "@/utils/fetchData";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useDispatch } from "react-redux";
 
 export const SearchedItemDisplay = () => {
   const [query, setQuery] = useState("");
   const [products, setProducts] = useState([]);
+  const timeoutRef = useRef<number|null>(null)
   const dispatch=useDispatch<AppDispatch>()
 
     useEffect(() => {
+      if (timeoutRef.current) clearTimeout(timeoutRef.current)
+     timeoutRef.current = window.setTimeout(()=>{
     const fetchFiltered = async () => {
       if (query.trim() === "") {
         setProducts([]); 
@@ -27,6 +30,7 @@ export const SearchedItemDisplay = () => {
     };
 
     fetchFiltered();
+    },500)
   }, [query]);
 
 

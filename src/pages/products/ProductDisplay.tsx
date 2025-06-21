@@ -13,9 +13,8 @@ import { fetchDataByGender } from '@/utils/fetchData';
 import { formatter } from '@/utils/currencyFormatter';
 import type { PropType } from '@/types/type';
 import type { Item } from '@/types/type';
-import { Base_URL } from '@/constants/ProductApi';
 import { useInfiniteQuery } from "@tanstack/react-query";
-
+import { container, loadBtn } from "@/styles/productStyles";
 
 
 const ProductDisplay = ({gender}:PropType) => {
@@ -23,8 +22,8 @@ const dispatch=useDispatch<AppDispatch>()
 
 
  const {data,error,fetchNextPage,status,hasNextPage,isFetchingNextPage} = useInfiniteQuery({
-    queryKey: ["clothes"],
-    queryFn: ({ pageParam = 1 }) => fetchDataByGender(Base_URL, gender, pageParam),
+    queryKey: ["clothes",gender],
+    queryFn: ({ pageParam = 1 }) => fetchDataByGender(gender, pageParam),
     initialPageParam: 1,
     getNextPageParam: (lastPage,allPages) => {
     const loadedItems = allPages.reduce((total, page) => total + page.data.length, 0);
@@ -49,19 +48,23 @@ if(status === 'pending'){
     </>
  }
 
-
   return (
     <>
-    <div className='flex flex-wrap gap-10 mx-25 mt-10'>{
+    <div className={container}>{
      data?.pages.map((page)=>{
         return page.data.map((item:Item)=>{
          return  <Card key={item.id} className='w-58'>
          <img src={item.image} alt="Cloth" className='h-40'/>
-         <CardHeader> <CardTitle>{item.name}</CardTitle></CardHeader>
+
+         <CardHeader> 
+            <CardTitle>{item.name}</CardTitle>
+         </CardHeader>
+
          <CardContent>
             <p>{item.category}</p>
-         <p>{formatter.format(item.price)}</p>
+            <p>{formatter.format(item.price)}</p>
          </CardContent>
+
          <CardFooter>
              <Button onClick={()=>handleAddClick(item)} className='cursor-pointer'>Add to cart</Button>
          </CardFooter>
@@ -70,11 +73,15 @@ if(status === 'pending'){
      })
     }
         </div>
-       <Button className="w-50 mx-auto mt-5 mb-5" onClick={() => fetchNextPage()} disabled={!hasNextPage || isFetchingNextPage}>
-  {isFetchingNextPage ? 'Loading...' : hasNextPage ? 'Load More' : 'No more items'}
-</Button>
+       <Button className={loadBtn} onClick={() => fetchNextPage()} disabled={!hasNextPage || isFetchingNextPage}>
+       {isFetchingNextPage ? 'Loading...' : hasNextPage ? 'Load More' : 'No more items'}
+       </Button>
 </>
   )
 }
 
 export default ProductDisplay
+
+
+
+

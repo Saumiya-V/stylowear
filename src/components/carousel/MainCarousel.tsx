@@ -1,8 +1,9 @@
 import { Button } from "@/components/ui/button"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 import { useCallback, useEffect, useRef, useState } from "react"
+import { images } from "@/assets/imageArr"
+import { btn, Container, ControlsDiv, ImageStyles, ImgContainer } from "@/styles/carouselStyles"
 
-const images = ["/carousel1.png", "/carousel4.png", "/carousel5.png"]
 
 export function MainCarousel() {
   const [current, setCurrent] = useState(0)
@@ -18,8 +19,8 @@ export function MainCarousel() {
 
  useEffect(() => {
     intervalRef.current = setInterval(() => {
-      nextSlide()
-    }, 3000) 
+      nextSlide() 
+    }, 3000)
 
     return () => {
       if (intervalRef.current) clearInterval(intervalRef.current)
@@ -27,27 +28,26 @@ export function MainCarousel() {
   }, [nextSlide])
 
   return (
-    <div className="w-full max-w-5xl mx-auto mt-10 overflow-hidden rounded-xl">
+    <div className={Container}>
       <div
-        className="flex transition-transform duration-500 ease-in-out"
+        className={ImgContainer}
         style={{ transform: `translateX(-${current * 100}%)` }}
       >
         {images.map((src, i) => (
           <img
             key={i}
             src={src}
-            className="w-full shrink-0 object-cover h-[355px]"
+            className={ImageStyles}
             alt={`Slide ${i}`}
           />
         ))}
       </div>
 
-      {/* Controls */}
-      <div className="absolute inset-0 flex items-center justify-between p-4">
-        <Button onClick={prevSlide} variant="ghost" className="bg-white/50 hover:bg-white/80 text-black">
+      <div className={ControlsDiv}>
+        <Button onClick={prevSlide} variant="ghost" className={btn}>
           <ChevronLeft/>
         </Button>
-        <Button onClick={nextSlide} variant="ghost" className="bg-white/50 hover:bg-white/80 text-black">
+        <Button onClick={nextSlide} variant="ghost" className={btn}>
          <ChevronRight/>
         </Button>
       </div>
